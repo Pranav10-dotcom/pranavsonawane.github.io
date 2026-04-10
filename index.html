@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Pranav Sachin Sonawane — AIML Student at Sanjivani University. AI, Robotics & Automation Enthusiast. Portfolio of projects, hackathons, and skills." />
+  <meta name="author" content="Pranav Sachin Sonawane" />
+  <!-- Open Graph -->
+  <meta property="og:title" content="Pranav Sonawane — AIML Portfolio" />
+  <meta property="og:description" content="AI, ML, Robotics & Automation — first-year AIML student portfolio." />
+  <meta property="og:type" content="website" />
+
+  <title>Pranav Sachin Sonawane — AIML Portfolio</title>
+
+  <!-- Preconnects -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <!-- Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap"
+    rel="stylesheet" />
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Stylesheets (load order matters) -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+  <!-- ── Custom cursor elements ── -->
+  <div id="cursor-dot" aria-hidden="true"></div>
+  <div id="cursor-ring" aria-hidden="true"></div>
+
+  <!-- ── Particle canvas (sits behind everything) ── -->
+  <canvas id="particle-canvas" aria-hidden="true"></canvas>
+
+  <!-- ── Aurora blob background ── -->
+  <div class="aurora-wrap" aria-hidden="true">
+    <div class="aurora-blob aurora-blob-1"></div>
+    <div class="aurora-blob aurora-blob-2"></div>
+    <div class="aurora-blob aurora-blob-3"></div>
+    <div class="aurora-blob aurora-blob-4"></div>
+  </div>
+
+  <!-- =========================================================
+       NAVBAR
+  ========================================================= -->
+  <nav id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="container">
+      <div class="nav-inner">
+
+        <a href="#home" class="nav-logo" aria-label="Pranav Sonawane — Home">
+          P<span>.</span>
+        </a>
+
+        <ul class="nav-links" role="list">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#hackathons">Hackathons</a></li>
+          <li><a href="#certifications">Certs</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <div class="nav-right">
+          <button class="theme-btn" id="themeToggle" aria-label="Toggle dark/light mode">
+            <i class="fa-solid fa-sun" id="themeIcon"></i>
+          </button>
+          <button class="hamburger" id="hamburger" aria-label="Open mobile menu" aria-expanded="false"
+            aria-controls="mobileMenu">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#about" onclick="closeMobile()">About</a></li>
+      <li><a href="#skills" onclick="closeMobile()">Skills</a></li>
+      <li><a href="#projects" onclick="closeMobile()">Projects</a></li>
+      <li><a href="#hackathons" onclick="closeMobile()">Hackathons</a></li>
+      <li><a href="#certifications" onclick="closeMobile()">Certifications</a></li>
+      <li><a href="#contact" onclick="closeMobile()">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- =========================================================
+       HERO
+  ========================================================= -->
+  <section id="home" aria-label="Introduction">
+
+    <!-- Dot grid background decoration -->
+    <div class="dot-grid" aria-hidden="true"></div>
+
+    <div class="container">
+      <div class="hero-grid">
+
+        <!-- Left: text -->
+        <div>
+          <div class="hero-badge">
+            <span class="badge-dot" aria-hidden="true"></span>
+            Open to Internships &amp; Opportunities
+          </div>
+
+          <h1 class="hero-name">
+            Pranav<br>
+            <span class="accent">Sonawane.</span>
+          </h1>
+
+          <p class="hero-tagline">
+            AIML Student &nbsp;|&nbsp; AI, Robotics &amp; Automation Enthusiast
+          </p>
+
+          <p class="hero-intro">
+            First-year B.Tech student at <strong>Sanjivani University, Kopargaon</strong>.
+            I build intelligent systems — from trained ML models to wall-climbing robots.
+            Blending code, curiosity, and hardware to create things that push limits.
+          </p>
+
+          <div class="hero-btns">
+            <a href="#projects" class="btn-primary">
+              <i class="fa-solid fa-rocket" aria-hidden="true"></i> View Projects
+            </a>
+            <a href="#contact" class="btn-outline">
+              <i class="fa-solid fa-envelope" aria-hidden="true"></i> Contact Me
+            </a>
+          </div>
+        </div>
+
+        <!-- Right: avatar + floating chips -->
+        <div class="hero-avatar-wrap" aria-hidden="true">
+          <div class="avatar-glow-ring"></div>
+          <div class="avatar-ring"></div>
+          <div class="avatar-ring2"></div>
+          <div class="hero-avatar">
+            <img src="pranav_photo.jpg" alt="Photo of Pranav Sonawane" class="hero-avatar-img" />
+          </div>
+          <!-- Floating stat chips -->
+
+
+          <div class="hero-stat">
+            <div class="stat-num">2+</div>
+            <div class="stat-label">Projects</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Scroll indicator -->
+    <div class="scroll-hint" aria-hidden="true">
+      <span>Scroll</span>
+      <i class="fa-solid fa-chevron-down"></i>
+    </div>
+
+  </section>
+
+  <!-- =========================================================
+       ABOUT
+  ========================================================= -->
+  <section id="about" class="section" aria-label="About me">
+    <div class="shimmer-line top" aria-hidden="true"></div>
+    <div class="shimmer-line bottom" aria-hidden="true"></div>
+
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="section-label">Who I am</p>
+        <h2 class="section-title">About Me</h2>
+      </div>
+
+      <div class="about-grid">
+        <!-- Bio text -->
+        <div class="about-text reveal d1">
+          <p>
+            I'm <strong>Pranav Sachin Sonawane</strong>, a first-year B.Tech student
+            specialising in <strong>Artificial Intelligence &amp; Machine Learning</strong>
+            at Sanjivani University, Kopargaon, Maharashtra, India.
+          </p>
+          <p>
+            My journey started with a simple question: <em>can machines truly learn like humans?</em>
+            That curiosity pushed me to explore Python, dive into neural networks, solder my
+            first ESP32, and compete in national hackathons — all within my first year of college.
+          </p>
+          <p>
+            I'm deeply passionate about the intersection of <strong>AI, Robotics, IoT,</strong>
+            and <strong>Process Automation</strong>. Whether that's training a classification model
+            or wiring up a robot that climbs vertical walls, I love turning ambitious ideas into
+            physical reality.
+          </p>
+          <p>
+            Outside tech, I explore how automation solves real-world challenges — from precision
+            agriculture to accessibility tools. I'm actively looking for <strong>internships,
+              open-source contributions,</strong> and collaborative projects that push my limits.
+          </p>
+        </div>
+
+        <!-- Highlight cards -->
+        <div class="about-cards reveal d2">
+          <div class="ahi">
+            <div class="ahi-icon"><i class="fa-solid fa-brain" aria-hidden="true"></i></div>
+            <div>
+              <h4>Artificial Intelligence &amp; ML</h4>
+              <p>Building models that learn — from data prep and feature engineering to neural network training.</p>
+            </div>
+          </div>
+          <div class="ahi">
+            <div class="ahi-icon"><i class="fa-solid fa-robot" aria-hidden="true"></i></div>
+            <div>
+              <h4>Robotics &amp; Hardware</h4>
+              <p>Designing and programming physical robots using ESP32, motor drivers, and sensor arrays.</p>
+            </div>
+          </div>
+          <div class="ahi">
+            <div class="ahi-icon"><i class="fa-solid fa-microchip" aria-hidden="true"></i></div>
+            <div>
+              <h4>IoT &amp; Automation</h4>
+              <p>Connecting devices and automating workflows with n8n, UiPath, and embedded firmware.</p>
+            </div>
+          </div>
+          <div class="ahi">
+            <div class="ahi-icon"><i class="fa-solid fa-code" aria-hidden="true"></i></div>
+            <div>
+              <h4>Software Development</h4>
+              <p>Clean, expressive code in Python, Rust, and Java for scripts, games, and web apps.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       SKILLS
+  ========================================================= -->
+  <section id="skills" class="section" aria-label="Skills">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="section-label">What I work with</p>
+        <h2 class="section-title">Skills &amp; Tools</h2>
+        <p class="section-sub">A growing toolkit spanning languages, libraries, and hardware platforms.</p>
+      </div>
+
+      <div class="skills-grid">
+
+        <div class="skill-card reveal d1">
+          <div class="skill-icon"><i class="fa-solid fa-terminal" aria-hidden="true"></i></div>
+          <h3>Programming Languages</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">Java</span>
+            <span class="skill-tag">Rust</span>
+            <span class="skill-tag">HTML</span>
+            <span class="skill-tag">CSS</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal d2">
+          <div class="skill-icon"><i class="fa-solid fa-chart-area" aria-hidden="true"></i></div>
+          <h3>ML &amp; Data Libraries</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">NumPy</span>
+            <span class="skill-tag">Pandas</span>
+            <span class="skill-tag">Matplotlib</span>
+            <span class="skill-tag">Seaborn</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal d3">
+          <div class="skill-icon"><i class="fa-solid fa-wrench" aria-hidden="true"></i></div>
+          <h3>Tools &amp; Platforms</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Git</span>
+            <span class="skill-tag">GitHub</span>
+            <span class="skill-tag">n8n</span>
+            <span class="skill-tag">UiPath</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal d4">
+          <div class="skill-icon"><i class="fa-solid fa-plug" aria-hidden="true"></i></div>
+          <h3>Hardware &amp; IoT</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">ESP32</span>
+            <span class="skill-tag">Arduino</span>
+            <span class="skill-tag">Ultrasonic Sensors</span>
+            <span class="skill-tag">Motor Drivers</span>
+            <span class="skill-tag">Suction Systems</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       PROJECTS
+  ========================================================= -->
+  <section id="projects" class="section" aria-label="Projects">
+    <div class="shimmer-line top" aria-hidden="true"></div>
+    <div class="shimmer-line bottom" aria-hidden="true"></div>
+
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="section-label">What I've built</p>
+        <h2 class="section-title">Projects</h2>
+        <p class="section-sub">Hardware and software projects that push learning boundaries.</p>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- Project 1: Wall Climbing Robot -->
+        <article class="project-card reveal d1">
+          <div class="project-top">
+            <div class="project-icon">
+              <i class="fa-solid fa-robot" aria-hidden="true"></i>
+            </div>
+            <span class="project-num">01</span>
+          </div>
+          <h3 class="project-title">Wall Climbing Robot</h3>
+          <p class="project-desc">
+            An IoT-based autonomous robot capable of climbing vertical surfaces using a
+            pneumatic suction mechanism. Combines real-time sensor feedback with precision
+            motor control for wall navigation. Designed, built, and programmed entirely
+            from scratch as a proof-of-concept for adhesion robotics.
+          </p>
+          <div class="project-stack">
+            <span class="project-tech">ESP32</span>
+            <span class="project-tech">Motor Driver</span>
+            <span class="project-tech">Ultrasonic Sensors</span>
+            <span class="project-tech">Suction Pump</span>
+            <span class="project-tech">IoT</span>
+          </div>
+        </article>
+
+        <!-- Project 2: Maze Solver Game -->
+        <article class="project-card reveal d2">
+          <div class="project-top">
+            <div class="project-icon">
+              <i class="fa-solid fa-gamepad" aria-hidden="true"></i>
+            </div>
+            <span class="project-num">02</span>
+          </div>
+          <h3 class="project-title">Maze Solver Game (Multiplayer)</h3>
+          <p class="project-desc">
+            A Python-based multiplayer maze-solving game where players compete to find the
+            shortest path through procedurally generated mazes. Features real-time
+            networking, custom maze-generation algorithms (DFS/BFS), and a polished
+            visual interface — built to sharpen algorithm design skills.
+          </p>
+          <div class="project-stack">
+            <span class="project-tech">Python</span>
+            <span class="project-tech">Pygame</span>
+            <span class="project-tech">Networking</span>
+            <span class="project-tech">BFS/DFS</span>
+            <span class="project-tech">Algorithms</span>
+          </div>
+        </article>
+
+        <!-- Project 3: Smart Farming Assistant -->
+        <article class="project-card reveal d3">
+          <div class="project-top">
+            <div class="project-icon">
+              <i class="fa-solid fa-seedling" aria-hidden="true"></i>
+            </div>
+            <span class="project-num">03</span>
+          </div>
+          <h3 class="project-title">Smart Farming Assistant</h3>
+          <p class="project-desc">
+            Developed an IoT-based farming assistant using sensor telemetry, predictive
+            alerts, and remote monitoring. It helps small farms detect soil moisture,
+            temperature, and air quality changes so actions can be taken before issues grow.
+          </p>
+          <div class="project-stack">
+            <span class="project-tech">ESP32</span>
+            <span class="project-tech">IoT</span>
+            <span class="project-tech">Python</span>
+            <span class="project-tech">Sensors</span>
+            <span class="project-tech">Data Analytics</span>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       HACKATHONS
+  ========================================================= -->
+  <section id="hackathons" class="section" aria-label="Hackathons">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="section-label">Competitions</p>
+        <h2 class="section-title">Hackathons</h2>
+        <p class="section-sub">Building under pressure, learning at speed — my competitive journey so far.</p>
+      </div>
+
+      <div class="timeline" role="list">
+
+        <!-- 1 -->
+        <div class="timeline-item reveal d1" role="listitem">
+          <div class="tl-year">2026</div>
+          <div class="tl-line" aria-hidden="true">
+            <div class="tl-dot"></div>
+          </div>
+          <div class="tl-card">
+            <h3 class="tl-name">Arohan Hackathon</h3>
+            <div class="tl-badge">
+              <i class="fa-solid fa-user-check" aria-hidden="true"></i> Participant
+            </div>
+            <p class="tl-desc">
+              Competed in Arohan, a social-impact focused hackathon. Developed a working
+              prototype in a 24-hour sprint addressing a real-world problem — valuable
+              experience in rapid prototyping and cross-functional teamwork.
+            </p>
+          </div>
+        </div>
+
+        <!-- 2 -->
+        <div class="timeline-item reveal d2" role="listitem">
+          <div class="tl-year">2026</div>
+          <div class="tl-line" aria-hidden="true">
+            <div class="tl-dot"></div>
+          </div>
+          <div class="tl-card">
+            <h3 class="tl-name">AIXplore Hackathon</h3>
+            <div class="tl-badge">
+              <i class="fa-solid fa-trophy" aria-hidden="true"></i> Finalist
+            </div>
+            <p class="tl-desc">
+              Reached the finals of AIXplore, an AI-centric hackathon challenging teams
+              to build intelligent applications. My team's applied ML solution in a novel
+              domain earned finalist recognition among hundreds of teams.
+            </p>
+          </div>
+        </div>
+
+        <!-- 3 -->
+        <div class="timeline-item reveal d3" role="listitem">
+          <div class="tl-year">2026</div>
+          <div class="tl-line" aria-hidden="true">
+            <div class="tl-dot"></div>
+          </div>
+          <div class="tl-card">
+            <h3 class="tl-name">ET GEN AI Hackathon</h3>
+            <div class="tl-badge">
+              <i class="fa-solid fa-star" aria-hidden="true"></i> Prototype Round Shortlisted
+            </div>
+            <p class="tl-desc">
+              Shortlisted in the Prototype Round of the Economic Times GEN AI Hackathon —
+              one of India's premier generative AI competitions — for a working prototype
+              leveraging large language models for intelligent automation workflows.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       CERTIFICATIONS
+  ========================================================= -->
+  <section id="certifications" class="section" aria-label="Certifications">
+    <div class="shimmer-line top" aria-hidden="true"></div>
+    <div class="shimmer-line bottom" aria-hidden="true"></div>
+
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="section-label">Credentials</p>
+        <h2 class="section-title">Certifications</h2>
+      </div>
+
+      <div class="cert-box reveal d1">
+        <div class="cert-text">
+          <h3>Verified Learning &amp; Credentials</h3>
+          <p>
+            Continuously upskilling through structured courses, workshops, and hands-on
+            programs. My certifications span machine learning fundamentals, Python for
+            data science, IoT development, robotic process automation, and cloud basics —
+            each representing applied learning beyond the classroom syllabus.
+          </p>
+          <div class="cert-badges">
+            <span class="cert-badge">
+              <i class="fa-brands fa-python" aria-hidden="true"></i> Python &amp; Data Science
+            </span>
+            <span class="cert-badge">
+              <i class="fa-solid fa-brain" aria-hidden="true"></i> Machine Learning
+            </span>
+            <span class="cert-badge">
+              <i class="fa-solid fa-plug" aria-hidden="true"></i> IoT Development
+            </span>
+            <span class="cert-badge">
+              <i class="fa-solid fa-robot" aria-hidden="true"></i> RPA / UiPath
+            </span>
+            <span class="cert-badge">
+              <i class="fa-brands fa-google" aria-hidden="true"></i> Cloud Basics
+            </span>
+          </div>
+        </div>
+
+        <div class="cert-action">
+          <div class="cert-icon-big" aria-hidden="true">
+            <i class="fa-solid fa-certificate"></i>
+          </div>
+          <a href="https://drive.google.com/drive/folders/1dJCU_oxZw3iQqDSGa8RJQ-VHPAJsGr7C?usp=drive_link
+" target="_blank" rel="noopener noreferrer" class="btn-primary">
+            <i class="fa-brands fa-google-drive" aria-hidden="true"></i>
+            View All Certifications
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       CONTACT
+  ========================================================= -->
+  <section id="contact" class="section" aria-label="Contact">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="section-label">Get in touch</p>
+        <h2 class="section-title">Contact</h2>
+      </div>
+
+      <div class="contact-grid">
+
+        <!-- Left: links -->
+        <div class="contact-left reveal d1">
+          <p>
+            Open to interesting conversations, collaborations, internship offers, or just
+            a friendly hello. Whether you're a recruiter, fellow developer, or someone
+            with a cool idea — my inbox is open!
+          </p>
+
+          <div class="contact-links">
+
+            <a href="mailto:pranavsonawane.127@gmail.com" class="contact-link" aria-label="Send email to Pranav">
+              <div class="cl-icon"><i class="fa-solid fa-envelope" aria-hidden="true"></i></div>
+              <div class="cl-info">
+                <div class="cl-label">Email</div>
+                <div class="cl-val">pranavsonawane.127@gmail.com</div>
+              </div>
+              <i class="fa-solid fa-arrow-right cl-arrow" aria-hidden="true"></i>
+            </a>
+
+            <a href="https://github.com/pranav10-dotcom" target="_blank" rel="noopener noreferrer" class="contact-link"
+              aria-label="Visit GitHub profile">
+              <div class="cl-icon"><i class="fa-brands fa-github" aria-hidden="true"></i></div>
+              <div class="cl-info">
+                <div class="cl-label">GitHub</div>
+                <div class="cl-val">pranav10-dotcom</div>
+              </div>
+              <i class="fa-solid fa-arrow-right cl-arrow" aria-hidden="true"></i>
+            </a>
+
+            <a href="https://www.linkedin.com/in/pranav-sonawane-7660b8374" target="_blank" rel="noopener noreferrer"
+              class="contact-link" aria-label="Visit LinkedIn profile">
+              <div class="cl-icon"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></div>
+              <div class="cl-info">
+                <div class="cl-label">LinkedIn</div>
+                <div class="cl-val">Pranav Sonawane</div>
+              </div>
+              <i class="fa-solid fa-arrow-right cl-arrow" aria-hidden="true"></i>
+            </a>
+
+          </div>
+        </div>
+
+        <!-- Right: contact form -->
+        <div class="contact-form-wrap reveal d2">
+          <h3>Send a Message</h3>
+
+          <form id="contactForm" novalidate>
+
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="name" placeholder="Rahul Sharma" autocomplete="name" required />
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="rahul@example.com" autocomplete="email"
+                required />
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Hey Pranav, I'd love to collaborate on…"
+                required></textarea>
+            </div>
+
+            <button type="submit" class="btn-primary btn-full-width">
+              <i class="fa-solid fa-paper-plane" aria-hidden="true"></i> Send Message
+            </button>
+
+            <div id="formStatus" class="form-status" role="alert" aria-live="polite"></div>
+
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       FOOTER
+  ========================================================= -->
+  <footer role="contentinfo">
+    <div class="container">
+      <div class="footer-inner">
+
+        <div class="footer-logo">Pranav<span>.</span></div>
+
+        <p class="footer-copy">
+          &copy; <span id="year"></span> Pranav Sachin Sonawane — All rights reserved.
+        </p>
+
+        <div class="footer-socials">
+          <a href="mailto:pranavsonawane.127@gmail.com" class="footer-social" aria-label="Email">
+            <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+          </a>
+          <a href="https://github.com/pranav10-dotcom" target="_blank" rel="noopener noreferrer" class="footer-social"
+            aria-label="GitHub">
+            <i class="fa-brands fa-github" aria-hidden="true"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/pranav-sonawane-7660b8374" target="_blank" rel="noopener noreferrer"
+            class="footer-social" aria-label="LinkedIn">
+            <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+  <!-- =========================================================
+        SCRIPTS (deferred for performance)
+  ========================================================= -->
+  <script src="js/main.js"></script>
+  <script src="js/particles.js"></script>
+
+</body>
+
+</html>
