@@ -37,14 +37,74 @@
 
 /* ─── TABLET PORTRAIT ≤ 900px ────────────────────────────── */
 @media (max-width: 900px) {
-  /* Hero: stack vertically */
-  .hero-grid {
-    grid-template-columns: 1fr;
-    text-align: left;
-    gap: 0;
-  }
 
-  .hero-avatar-wrap { display: none; }
+/* Hero: stack vertically */
+.hero-grid {
+grid-template-columns: 1fr;
+text-align: left;
+gap: 0;
+}
+
+/* SHOW avatar on mobile/tablet */
+.hero-avatar-wrap {
+display: flex;
+width: 240px;
+height: 340px;
+margin: 40px auto 0;
+align-items: center;
+justify-content: center;
+}
+
+.hero-avatar {
+width: 100%;
+height: 100%;
+border-radius: 24px;
+overflow: hidden;
+}
+
+.hero-avatar-img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+object-position: center top;
+border-radius: 24px;
+}
+
+/* About: stack */
+.about-grid {
+grid-template-columns: 1fr;
+gap: 48px;
+}
+
+/* Contact: stack */
+.contact-grid {
+grid-template-columns: 1fr;
+gap: 40px;
+}
+
+/* Certs: stack */
+.cert-box {
+grid-template-columns: 1fr;
+text-align: left;
+padding: 36px;
+}
+
+.cert-action {
+text-align: left;
+display: flex;
+align-items: center;
+gap: 24px;
+}
+
+.cert-icon-big {
+margin: 0;
+}
+
+.cert-text p {
+max-width: 100%;
+}
+
+
 
   /* About: stack */
   .about-grid {
@@ -175,6 +235,7 @@
   .hero-badge { font-size: 11px; padding: 5px 12px; }
 
   .hero-name { font-size: 34px; }
+
 
   .project-title { font-size: 18px; }
 
