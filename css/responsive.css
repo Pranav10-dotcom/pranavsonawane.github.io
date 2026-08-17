@@ -262,3 +262,11 @@ max-width: 100%;
 
   a { color: #6366f1; }
 }
+
+
+/* ─── PROJECT GRID ───────────────────────────────────────── */
+@media (max-width: 760px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}

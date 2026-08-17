@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://pranav10-dotcom.github.io/pranavsonawane.github.io/sitemap.xml

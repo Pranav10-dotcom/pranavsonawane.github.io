@@ -1,21 +1,22 @@
 # Security Policy
 
+## Reporting a Security Issue
+
+This repository contains a static personal portfolio website.
+
+If you discover a security or privacy issue affecting the website or repository, please report it privately through the contact information available on the portfolio website. Avoid publicly posting sensitive details.
+
+## Scope
+
+This policy covers:
+
+- Portfolio source code
+- Client-side JavaScript and CSS
+- Public website assets
+- Forms and public integrations used by the portfolio
+
+Do not submit passwords, API keys, access tokens, personal data, or other sensitive information in public issues.
+
 ## Supported Versions
 
-Use this section to tell people about which versions of your project are
-currently being supported with security updates.
-
-| Version | Supported          |
-| ------- | ------------------ |
-| 5.1.x   | :white_check_mark: |
-| 5.0.x   | :x:                |
-| 4.0.x   | :white_check_mark: |
-| < 4.0   | :x:                |
-
-## Reporting a Vulnerability
-
-Use this section to tell people how to report a vulnerability.
-
-Tell them where to go, how often they can expect to get an update on a
-reported vulnerability, what to expect if the vulnerability is accepted or
-declined, etc.
+Only the current version of the portfolio is actively maintained.

@@ -1,160 +1,111 @@
-# Pranav Sonawane - AI Engineer Portfolio 🚀
+# Pranav Sonawane — AI Engineer Portfolio 🚀
 
-Welcome to my personal portfolio website.  
-This portfolio represents my journey, projects, skills, and experience in Artificial Intelligence, Machine Learning, and Software Development.
+> CSE (AI & ML) Student | Google Student Ambassador 2026
 
----
+Welcome to my personal portfolio website showcasing my projects, technical skills, achievements, hackathons, and real-world engineering work.
 
-# 🌐 Live Website
+## 🌐 Live Website
 
 https://pranav10-dotcom.github.io/pranavsonawane.github.io/
 
----
+## 👨‍💻 About
 
-# 👨‍💻 About Me
+I am a Computer Science Engineering student specializing in Artificial Intelligence & Machine Learning at Sanjivani University.
 
-Hi, I'm **Pranav Sachin Sonawane**  
-A Computer Science Engineering student specializing in Artificial Intelligence & Machine Learning at Sanjivani University.
+I enjoy building practical systems across:
 
-I am passionate about:
-- Artificial Intelligence
-- Machine Learning
-- Web Development
+- AI & Machine Learning
 - Python Development
+- Robotics & IoT
+- Automation
+- Web Development
+- Developer Tools
 - Open Source
-- Building Real-World Solutions
 
-I enjoy creating impactful projects and continuously learning modern technologies.
+## 🏆 Milestones
 
----
+- **Google Student Ambassador 2026 — Gemini**
+- Hackathon finalist / shortlisted project participant
+- Builder of real-world hardware and software prototypes
 
-# 🚀 Features
+## 🚀 Featured Project
 
-- Responsive Modern UI
-- Interactive Animations
-- Skills Showcase
-- Projects Section
-- Contact Section
-- Social Media Integration
-- Optimized Deployment using GitHub Pages
+### Automated Tool Manager for eSim
 
----
+A Python-based developer utility that automates installation, configuration, verification, and management of external EDA tools required by eSim, including tools such as Ngspice, KiCad, GHDL, and Verilator.
 
-# 🛠️ Tech Stack
+## 📂 Projects
 
-## Frontend
+- **Wall Climbing Robot** — ESP32-based wall-climbing robotics prototype.
+- **Maze Solver Game (Multiplayer)** — Python/Pygame project focused on maze generation, pathfinding, and networking.
+- **Smart Farming Assistant** — IoT-oriented agriculture decision-support project.
+- **Automated Tool Manager for eSim** — Automation utility for managing eSim's external EDA dependencies.
+
+## 🛠️ Tech Stack
+
+### Frontend
 - HTML5
 - CSS3
 - JavaScript
 
-## Tools & Platforms
+### Programming & Tools
+- Python
+- Git
 - GitHub
-- GitHub Pages
 - VS Code
 
-## Learning & Exploring
-- Python
-- Machine Learning
-- AI Tools
-- Firebase
-- MySQL
+### Hardware / Systems
+- ESP32
+- IoT
+- EDA tooling
+- eSim
+- Ngspice
+- KiCad
+- GHDL
+- Verilator
 
----
-
-# 📂 Projects
-
-This portfolio includes projects related to:
-- AI & ML
-- Web Development
-- Automation
-- Real-World Problem Solving
-- Student Innovation
-
----
-
-# ⚙️ Installation & Setup
+## ⚙️ Local Setup
 
 Clone the repository:
 
 ```bash
 git clone https://github.com/pranav10-dotcom/pranavsonawane.github.io.git
+```
 
 Open the project folder:
 
+```bash
 cd pranavsonawane.github.io
+```
 
-Run locally by opening:
+The portfolio is a static website, so it can be previewed by opening `index.html` in a browser or serving the directory with a local HTTP server.
 
-index.html
+## 📬 Contact
 
+- GitHub: https://github.com/pranav10-dotcom
+- LinkedIn: https://www.linkedin.com/in/pranav-sonawane-7660b8374
+- Email: pranavsonawane.127@gmail.com
 
----
+## 📌 Future Improvements
 
-📬 Contact Me
+- Project-specific demo pages
+- Detailed technical case studies
+- AI assistant integration
+- Blog section
+- More interactive project demonstrations
 
-GitHub
-
-https://github.com/pranav10-dotcom
-
-LinkedIn
-
-https://www.linkedin.com/in/pranav-sonawane-7660b8374
-
-Email
-
-pranavsonawane.127@gmail.com
-
-
----
-
-📌 Future Improvements
-
-AI Assistant Integration
-
-Backend APIs
-
-Blog Section
-
-Firebase Integration
-
-Real-Time Features
-
-AI/ML Project Showcase
-
-
-
----
-
-⚠️ Copyright Notice
+## ⚠️ Copyright
 
 Copyright (c) 2026 Pranav Sachin Sonawane
 
 All Rights Reserved.
 
-This portfolio website, including its source code, design, content, animations, assets, projects, and implementation, is original work created by Pranav Sachin Sonawane.
+This portfolio website, its design, content, animations, assets, and implementation are personal work. Unauthorized copying, reproduction, modification, redistribution, or reuse without permission is prohibited.
 
-Unauthorized copying, reproduction, modification, redistribution, or reuse of this project or any part of it without explicit written permission is strictly prohibited.
+## ⭐ Support
 
+If you find the portfolio useful, consider starring the repository.
 
----
+## 🙌 Acknowledgements
 
-⭐ Support
-
-If you like this project, consider giving the repository a star ⭐
-
-
----
-
-🙌 Acknowledgements
-
-Thanks to:
-
-Open Source Community
-
-GitHub
-
-Developers & Mentors
-
-Learning Platforms
-
-Everyone supporting my journey 🚀
+Thanks to the open-source community, GitHub, mentors, and everyone who contributed to my learning journey.
